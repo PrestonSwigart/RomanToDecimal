@@ -22,6 +22,19 @@ public class RomanToDecimal {
                 return -1;
         }
 
+        if(roman.indexOf("IV") != -1)
+            sum -= 2;
+        if(roman.indexOf("IX") != -1)
+            sum -= 2;
+        if(roman.indexOf("XL") != -1)
+            sum -= 20;
+        if(roman.indexOf("XC") != -1)
+            sum -= 20;
+        if(roman.indexOf("CD") != -1)
+            sum -= 200;
+        if(roman.indexOf("CM") != -1)
+            sum -= 200;
+
         return sum;
     }
 
