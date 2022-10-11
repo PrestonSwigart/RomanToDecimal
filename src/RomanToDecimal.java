@@ -1,6 +1,14 @@
 import java.util.Scanner;
 
+/**
+ * main class
+ */
 public class RomanToDecimal {
+    /**
+     * changes it into decimal
+     * @param roman
+     * @return
+     */
     public static int romanToDecimal(String roman){
         int sum = 0;
         roman = roman.toUpperCase();
@@ -40,6 +48,11 @@ public class RomanToDecimal {
         return sum;
     }
 
+    /**
+     * i thought we were supposed to use userinput....
+     * main method for romantodecimal
+     * @param args
+     */
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.print("Enter a roman numeral: ");
