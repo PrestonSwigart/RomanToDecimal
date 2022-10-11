@@ -1,4 +1,3 @@
-import java.util.Scanner;
 
 /**
  * main class
@@ -49,15 +48,12 @@ public class RomanToDecimal {
     }
 
     /**
-     * i thought we were supposed to use userinput....
      * main method for romantodecimal
      * @param args
      */
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        System.out.print("Enter a roman numeral: ");
-        String roman = in.nextLine();
-        System.out.println(romanToDecimal(roman));
-
+        for(String roman : args) {
+            System.out.println("Input: " + roman + " => output: " + romanToDecimal(roman));
+        }
     }
 }
