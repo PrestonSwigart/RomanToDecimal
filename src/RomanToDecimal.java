@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class RomanToDecimal {
     public static int romanToDecimal(String roman){
         int sum = 0;
@@ -39,8 +41,10 @@ public class RomanToDecimal {
     }
 
     public static void main(String[] args) {
-        for(String roman : args) {
-            System.out.println("input " + roman + " output " + romanToDecimal(roman));
-        }
+        Scanner in = new Scanner(System.in);
+        System.out.print("Enter a roman numeral: ");
+        String roman = in.nextLine();
+        System.out.println(romanToDecimal(roman));
+
     }
 }
