@@ -6,7 +6,7 @@ public class RomanToDecimalTest {
 
     @org.junit.Test
     /**
-     * runs tests
+     * runs tests on RomanToDecimal
      */
     public void romanToDecimal() {
         assertEquals(RomanToDecimal.romanToDecimal("iv"), 4);
